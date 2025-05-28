@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+#Beranda {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#Layanan {
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+#Galeri {
+  padding: 60px 20px;
+  background-color: #fefefe;
+}
+
+#Kontak {
+  min-height: 90vh;
+  padding: 60px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 80px;
+  background-color: color-mix(in oklch, #ffc0cb 70%, white 30%);
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #cc3366;
+}
+
+.logo {
+  border: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  padding: 5px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+nav {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+nav ul {
+  list-style: none;
+  gap: 20px;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #cc3366;
+  transform: scale(1.05);
+}
+
+.hero {
+  background-image: url(asset/backdrop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 78vh;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #cc3366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a82652;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 0;
+  background-color: #fce4ec;
+  color: #cc3366;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #55acee;
+  color: white;
+}
+
+/* CSS untuk Layanan */
+
+.layanan {
+  text-align: center;
+  background-color: #fffafc;
+}
+
+.layanan-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.layanan-item {
+  background-color: #fff0f5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.layanan-item:hover {
+  transform: scale(1.05);
+}
+
+.layanan-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.kontak h2 {
+  font-size: 28px;
+  color: #cc3366;
+  margin-bottom: 20px;
+}
+
+.kontak-info p {
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+}
+
+.kontak-info a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* CSS GALERI */
+
+.galeri {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.galeri h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #cc3366;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.galeri-item {
+  text-align: center;
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeri-item img:hover {
+  transform: scale(1.05);
+}
+
+.galeri-item figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+
+  font-style: italic;
+}
