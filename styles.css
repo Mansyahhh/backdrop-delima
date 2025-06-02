@@ -56,10 +56,15 @@ main {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
-  height: 80px;
+  height: 60px;
   background-color: color-mix(in oklch, #ffc0cb 70%, white 30%);
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -105,14 +110,27 @@ nav a {
 
 nav a:hover {
   color: #cc3366;
-  transform: scale(1.05);
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+nav a.active {
+  color: #cc3366;
+  border-bottom: 2px solid #cc3366;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #cc3366;
 }
 
 .hero {
-  background-image: url(asset/backdrop.jpg);
+  background-image: url(asset/ilustrasi-pernikahan_169.jpeg);
   background-size: cover;
   background-position: center;
-  height: 78vh;
+  height: calc(100vh - 60px);
+  margin-top: 60px;
   text-align: center;
   color: white;
   justify-content: center;
@@ -123,8 +141,6 @@ nav a:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -164,7 +180,7 @@ nav a:hover {
 
 footer {
   text-align: center;
-  padding: 0;
+  padding: 10px;
   background-color: #fce4ec;
   color: #cc3366;
   font-size: 14px;
@@ -172,7 +188,7 @@ footer {
 }
 
 .fa {
-  padding: 20px;
+  padding: 15px;
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -183,9 +199,18 @@ footer {
   opacity: 0.7;
 }
 
+.fa-whatsapp {
+  color: red;
+  font-size: 48px;
+}
+
 .fa-instagram {
-  background: #55acee;
-  color: white;
+  padding: 5px;
+  color: blue;
+}
+
+.fa-envelope {
+  font-size: 48px;
 }
 
 /* CSS untuk Layanan */
@@ -220,7 +245,7 @@ footer {
 
 .layanan-item img {
   width: 100px;
-  height: auto;
+  height: 100px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -274,6 +299,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  background: #f5f5f5;
 }
 
 .galeri-item img:hover {
