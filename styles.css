@@ -313,3 +313,19 @@ footer {
 
   font-style: italic;
 }
+
+/* Media Querry */
+@media (max-width: 768px) {
+  .layanan-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+  }
+}
