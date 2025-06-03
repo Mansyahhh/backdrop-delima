@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
+
     <!-- Font -->
     <link
       rel="preload"
@@ -17,17 +18,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <!-- Media Sosial Button -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- Lightbox CSS -->
+
+    <!-- GLightbox CSS -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
     />
-    <!-- Lightbox CSS -->
+
     <!-- Title -->
     <title>Beranda - Delima Decoration</title>
     <meta
@@ -123,8 +126,9 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Lamaran/Lamaran 1.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-lamaran-Indoor-Estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Lamaran/Lamaran 1.jpg"
@@ -135,8 +139,9 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Lamaran/Lamaran 2.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-lamaran-Indoor-Premium-Estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Lamaran/Lamaran 2.jpg"
@@ -147,8 +152,9 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Lamaran/Lamaran 3.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-lamaran-adat-budaya"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Lamaran/Lamaran 3.jpg"
@@ -159,8 +165,9 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Lamaran/Lamaran 4.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-lamaran-indoor-sederhana-estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Lamaran/Lamaran 4.jpg"
@@ -171,8 +178,9 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Lamaran/Lamaran 5.jpeg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-lamaran-sederhana-design-premium-estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Lamaran/Lamaran 5.jpeg"
@@ -185,8 +193,9 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Akad/akad 1.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-akad-nikah-premium-estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Akad/akad 1.jpg"
@@ -197,20 +206,23 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Akad/akad 2.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-akad-nikah-sederhana-estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Akad/akad 2.jpg"
                 alt="dekorasi-akad-nikah-sederhana-estetik"
+                class="glightbox"
             /></a>
             <figcaption>Dekorasi Akad Nikah Sederhana Estetik</figcaption>
           </figure>
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Pelaminan/Pelaminan 1.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-pelaminan-indoor-premium-estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Pelaminan/Pelaminan 1.jpg"
@@ -221,12 +233,14 @@
           <figure class="galeri-item">
             <a
               href="asset/Dekorasi Pelaminan/Pelaminan 2.jpg"
-              data-lightbox="galeri"
+              data-gallery="galeri"
               data-title="dekorasi-pelaminan-outdoor-premium-estetik"
+              class="glightbox"
               ><img
                 loading="lazy"
                 src="asset/Dekorasi Pelaminan/Pelaminan 2.jpg"
                 alt="dekorasi-pelaminan-outdoor-premium-estetik"
+                class="glightbox"
             /></a>
             <figcaption>Dekorasi Pelaminan Outdoor Premium Estetik</figcaption>
           </figure>
@@ -273,9 +287,13 @@
         ></a>
       </span>
     </footer>
-    <!-- Lighbox JS -->
-
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({
+        selector: ".glightbox",
+      });
+    </script>
     <!-- JS normal -->
-    <script src="script.js"></script>
   </body>
 </html>
