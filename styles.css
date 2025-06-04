@@ -56,54 +56,59 @@ main {
 }
 
 /* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cc3366;
-  padding: 10px 20px;
+  background-color: #fff0f5;
+  padding: 20px 30px;
   flex-wrap: wrap;
-  font: 700 16px/20px Poppins, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0, 1);
+  top: 0;
+  z-index: 999;
 }
 
-.navbar .logo {
-  font-family: "Great-vibes", sans-serif;
-  font-size: 24px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
   font-weight: bold;
-  color: #ffaa55;
+  color: #cc3366;
 }
 
 .logo img {
-  height: 60px;
-  padding: 5px;
+  height: 32px;
+  border-radius: 6px;
   width: auto;
-  margin-right: 10px;
-  vertical-align: middle;
 }
 
 .nav-links {
   list-style: none;
   gap: 20px;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
-.nav-links li a {
+.nav-links a {
   text-decoration: none;
-  color: #000010;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
   font-weight: bold;
 }
 
-nav a:hover {
-  color: #cc3366;
+.nav-links a:hover {
+  background-color: #f7dce7;
+  opacity: 70;
   transform: scale(1.03);
   transition: transform 0.2s ease;
 }
 
 nav a.active {
-  color: #cc3366;
-  border-bottom: 2px solid #cc3366;
+  color: #ffaa55;
+  border-bottom: 2px solid #ffaa55;
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -113,11 +118,12 @@ nav a.active {
 }
 
 .hamburger {
-  font-family: "playfair", sans-serif;
+  font: bold 18px/20px "playfair", sans-serif;
   display: none;
-  font-size: 28px;
   cursor: pointer;
-  color: #ffaa55;
+  color: white;
+  background-color: #cc3366;
+  padding: 10px 16px;
 }
 
 #menu-toggle {
@@ -130,18 +136,26 @@ nav a.active {
     display: block;
   }
 
+  .logo img {
+    height: 36px;
+    margin-bottom: 10px;
+  }
+
   .nav-links {
     flex-direction: column;
     width: 100%;
     display: none;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
   }
 
   #menu-toggle:checked ~ .nav-links {
     display: flex;
-  }
-  .nav-links li {
-    text-align: center;
-    padding: 10px 0;
   }
 }
 
