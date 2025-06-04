@@ -225,6 +225,12 @@ nav a.active {
   background-color: #fffafc;
 }
 
+.layanan h2 {
+  font-size: 28px;
+  color: #cc3366;
+  margin-bottom: 20px;
+}
+
 .layanan-list {
   display: flex;
   flex-wrap: wrap;
@@ -264,10 +270,22 @@ nav a.active {
   background-color: #fff4f7;
 }
 
+.testimoni h2 {
+  font-size: 28px;
+  color: #cc3366;
+  margin-bottom: 20px;
+}
+
 .testimoni-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.tentang h2 {
+  font-size: 28px;
+  color: #cc3366;
+  margin-bottom: 20px;
 }
 
 blockquote {
