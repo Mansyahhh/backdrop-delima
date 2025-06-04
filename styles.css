@@ -38,10 +38,6 @@ main {
   overflow: hidden;
 }
 
-main {
-  background-color: darkblue;
-}
-
 #Layanan {
   min-height: 100vh;
   padding: 60px 20px;
@@ -71,9 +67,10 @@ main {
 }
 
 .navbar .logo {
+  font-family: "Great-vibes", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  color: #fff0f5;
+  color: #ffaa55;
 }
 
 .logo img {
@@ -116,9 +113,11 @@ nav a.active {
 }
 
 .hamburger {
+  font-family: "playfair", sans-serif;
   display: none;
   font-size: 28px;
   cursor: pointer;
+  color: #ffaa55;
 }
 
 #menu-toggle {
@@ -149,21 +148,17 @@ nav a.active {
 /* Navbar END */
 
 .hero {
-  background-image: url(asset/ilustrasi-pernikahan_169.jpeg);
+  background-image: url(asset/full-shot-married-couple-dancing-together.jpg);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 60px);
-  margin-top: 60px;
+  height: 100vh;
+  /* margin-top: 60px; */
   text-align: center;
-  color: white;
+  color: #fff0f5;
   justify-content: center;
   display: flex;
   align-items: center;
-  color: white;
   position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
   box-sizing: border-box;
 }
 
@@ -181,6 +176,7 @@ nav a.active {
 .hero-text {
   position: relative;
   z-index: 2;
+  font: bold 24pxpx/20px playfair, great-vibes, sans-serif;
 }
 
 .cta-button {
@@ -263,6 +259,57 @@ nav a.active {
   border-radius: 8px;
   margin-bottom: 15px;
 }
+
+/* Testimoni Style */
+.testimoni {
+  background-color: #fff0f5;
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimoni-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #cc3366;
+}
+/* Testimoni Style */
+
+/* Tentang Style */
+.tentang {
+  padding: 60px 20px;
+  text-align: center;
+  background: #ccee55;
+}
+
+.tentang p {
+  margin-top: 10px;
+  font: 16px/20px "great-vibes", sans-serif;
+  color: #cc3366;
+}
+
+.tentang p span {
+  font-weight: bold;
+}
+
+/* Tentang Style */
 
 .kontak h2 {
   font-size: 28px;
