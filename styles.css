@@ -23,6 +23,13 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
 }
 
 main {
@@ -131,33 +138,6 @@ nav a.active {
 }
 
 /* Responsif navbar */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .logo img {
-    height: 36px;
-    margin-bottom: 10px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    margin-top: 10px;
-  }
-
-  .nav-links a {
-    background-color: #fff;
-    width: 100%;
-    text-align: left;
-  }
-
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-}
 
 /* Navbar END */
 
@@ -165,6 +145,7 @@ nav a.active {
   background-image: url(asset/full-shot-married-couple-dancing-together.jpg);
   background-size: cover;
   background-position: center;
+
   height: 100vh;
   /* margin-top: 60px; */
   text-align: center;
@@ -207,8 +188,8 @@ nav a.active {
 }
 
 .cta-button:hover {
-  background-color: #a82652;
   transform: scale(1.05);
+  background-color: #b92c5d;
 }
 
 .fa {
@@ -276,11 +257,11 @@ nav a.active {
 
 /* Testimoni Style */
 .testimoni {
-  background-color: #fff0f5;
   padding: 60px 20px;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  background-color: #fff4f7;
 }
 
 .testimoni-container {
@@ -416,18 +397,35 @@ footer a {
 /* Media Querry */
 @media (max-width: 768px) {
   /* responsif header */
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #fff0f5;
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+
+    .logo img {
+      height: 36px;
+      margin-bottom: 10px;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      margin-top: 10px;
+    }
+
+    .nav-links a {
+      background-color: #fff;
+      width: 100%;
+      text-align: left;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
   }
 
-  .logo img {
-    height: 40px;
-  }
-
-  nav ul {
+  /* nav ul {
     flex-direction: column;
     width: 100%;
     gap: 10px;
@@ -445,7 +443,7 @@ footer a {
     padding: 10px;
     border-radius: 6px;
     background-color: #fff0f5;
-  }
+  } */
   /* responsif header end */
 
   .layanan-list {
@@ -464,7 +462,7 @@ footer a {
   }
 
   .cta-button {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 20px;
   }
 
